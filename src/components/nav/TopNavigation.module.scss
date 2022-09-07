@@ -1,0 +1,32 @@
+@import "../../assets/colors";
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+
+  .box {
+    background-color: $white;
+    padding: 0 2rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    box-shadow: 3px 6px 10px rgba(0,0,0,0.1);
+
+    .boxItem {
+      cursor: pointer;
+      font-weight: 600;
+      padding: 1.5rem 0;
+      color: $gray-400;
+
+      &:hover {
+        color: $red-500;
+      }
+
+      &.active {
+        color: $red-500;
+        border-bottom: 3px solid $red-500;
+      }
+    }
+  }
+}
